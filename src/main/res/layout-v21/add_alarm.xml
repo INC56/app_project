@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="premierprojet.android.projetenjeux.MainActivity">
+
+
+    <TextView
+        android:id="@+id/Add_alarm"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/add_alarm"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="spread" />
+
+    <LinearLayout
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="212dp"
+        android:layout_below="@+id/Add_alarm"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add_alarm">
+
+        <TextView
+            android:id="@+id/alarm_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/alarm_time"
+            android:textSize="24sp"
+            tools:ignore="LabelFor" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:timePickerMode="spinner"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recurring"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/Time"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center"
+        android:text="@string/recurring"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+
+    <Button
+        android:id="@+id/Music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recurring"
+        android:layout_marginTop="12dp"
+        android:text="@string/music"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recurring" />
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/complete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Music" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-37dp" />
+
+
+</android.support.constraint.ConstraintLayout>

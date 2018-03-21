@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="premierprojet.android.projetenjeux.MainActivity">
+
+
+    <TextView
+        android:id="@+id/recurring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/recurring"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="spread" />
+
+    <LinearLayout
+        android:id="@+id/Days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/recurring">
+
+        <Switch
+            android:id="@+id/switch_monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/monday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_thursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_friday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_saturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch_sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/complete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Days" />
+
+</android.support.constraint.ConstraintLayout>
