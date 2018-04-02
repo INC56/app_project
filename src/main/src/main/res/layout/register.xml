@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@color/colorBackground">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inscription"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/pseudo"
+            android:textSize="22sp"
+            android:id="@+id/pseudo2"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorText"
+            android:background="@drawable/border"
+            android:layout_marginTop="50dp"
+            android:drawableRight="@mipmap/ic_identifiant"/>
+
+
+
+        <EditText
+            android:id="@+id/password2"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/mdp"
+            android:textSize="22sp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorText"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@mipmap/ic_key"
+            />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/confirmmdp"
+            android:textSize="22sp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorText"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@mipmap/ic_key"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/registerbbutton"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/inscription"
+                android:background="@drawable/borderbutton"
+                />
+
+            <TextView
+                android:id="@+id/linksign"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alreadylog"
+                android:textSize="15sp"
+                android:textColor="@color/colorText"
+                android:textStyle="italic|bold"
+                android:onClick="onClick"
+                android:clickable="true"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
