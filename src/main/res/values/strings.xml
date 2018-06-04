@@ -32,6 +32,9 @@
     <string name="hub">Hub</string>
     <string name="add_alarm">Add alarm</string>
     <string name="recurring">Recurring</string>
+    <string name="alarm_name">alarm name</string>
+    <string name="play_random_button">play random button</string>
+    <string name="search_for_music">Search for music</string>
 
 
 </resources>

@@ -3,19 +3,17 @@ package premierprojet.android.projetenjeux;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity  {
+public class MainActivity extends Activity {
     Button b1;
-    EditText ed1,ed2;
+    EditText ed1, ed2;
 
     TextView tx1;
 
@@ -24,21 +22,21 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        b1 = (Button)findViewById(R.id.okbutton);
-        ed1 = (EditText)findViewById(R.id.pseudo);
-        ed2 = (EditText)findViewById(R.id.password);
+        b1 = (Button) findViewById(R.id.okbutton);
+        ed1 = (EditText) findViewById(R.id.pseudo);
+        ed2 = (EditText) findViewById(R.id.password);
 
-        tx1 = (TextView)findViewById(R.id.linkregister);
+        tx1 = (TextView) findViewById(R.id.linkregister);
 
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1.getText().toString().equals("admin") &&
+                if (ed1.getText().toString().equals("admin") &&
                         ed2.getText().toString().equals("root")) {
                     Intent intent = new Intent(MainActivity.this, home.class);
                     startActivity(intent);
-                }else{
+                } else {
                     Context context = getApplicationContext();
                     CharSequence text = "Wrong password or pseudo!";
                     int duration = Toast.LENGTH_SHORT;
@@ -59,3 +57,4 @@ public class MainActivity extends Activity  {
         });
     }
 }
+

@@ -4,34 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="premierprojet.android.projetenjeux.MainActivity">
+    tools:context="premierprojet.android.projetenjeux.MainActivity$MainActivity">
 
-
-    <LinearLayout
-        android:id="@+id/modifyAlarmProperties"
-        android:layout_width="361dp"
-        android:layout_height="57dp"
-        android:background="@color/colorBackground"
-        android:gravity="center_vertical|center"
-        android:importantForAutofill="no"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/Tool_bar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/alarm_title"
-            android:textColor="@color/colorText"
-            android:textSize="30sp"
-            android:textStyle="italic" />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Tool_bar"
@@ -42,40 +16,30 @@
         app:layout_constraintBottom_toTopOf="@+id/Alarm_list"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/modifyAlarmProperties">
+        app:layout_constraintStart_toStartOf="parent">
 
 
-        <LinearLayout
-            style="?android:attr/buttonBarStyle"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteY="92dp">
+            android:text="@string/alarm_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="italic" />
 
-            <Button
-                android:id="@+id/Add"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/add"
-                android:textColor="@color/colorText" />
+        <Button
+            android:id="@+id/Add"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/add"
+            android:textColor="@color/colorText" />
 
-            <Button
-                android:id="@+id/Modify"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/modify"
-                android:textColor="@color/colorText" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <ListView

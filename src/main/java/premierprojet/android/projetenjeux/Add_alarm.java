@@ -28,5 +28,16 @@ public class Add_alarm extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Add_alarm.this, Recurring.class);
                 startActivity(intent);}});
+
+        /* b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Add_alarm.this, Music.class);
+                startActivity(intent);}}); */
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Add_alarm.this.finish(); }});
     }
 }

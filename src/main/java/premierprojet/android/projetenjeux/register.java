@@ -6,16 +6,16 @@ package premierprojet.android.projetenjeux;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.Activity;
 
 
-public class register extends AppCompatActivity {
+public class register extends Activity {
 
     EditText ed1,ed2,ed3 ;
     Button b1;
@@ -53,6 +53,14 @@ public class register extends AppCompatActivity {
             }
         });
 
+        String data_param_register = "<user>\n" +
+                    "<username>" + ed1.getText().toString() + "</username>\n" +
+                    "<password>" + ed2.getText().toString() + "</password>\n" +
+                    "<firstname></firstname>\n" +
+                    "<lastname></lastname>\n" +
+                    "<email></email>\n" +
+                    "<device_code></device_code>\n" +
+                "</user>";
 
         tx1.setOnClickListener(new View.OnClickListener() {
             @Override

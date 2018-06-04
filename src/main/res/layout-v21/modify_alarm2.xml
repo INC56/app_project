@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:gravity="center_vertical|center_horizontal"
-            android:text="@string/add_alarm"
+            android:text="@string/modify_alarm_title"
             android:textColor="@color/colorText"
             android:textSize="30sp"
             android:textStyle="italic"

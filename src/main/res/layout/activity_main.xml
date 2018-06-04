@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="premierprojet.android.projetenjeux.MainActivity">
+    tools:context="premierprojet.android.projetenjeux.MainActivity$MainActivity">
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -93,7 +93,6 @@
                 android:text="@string/nocompt"
                 android:textColor="@color/colorText"
                 android:textSize="15sp"
-
                 android:textStyle="italic|bold" />
 
 

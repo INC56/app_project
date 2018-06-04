@@ -47,7 +47,7 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/mes_beamy"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/mesbeamys" />
+            android:src="@drawable/mesbeamys" />
 
         <ImageButton
             android:id="@+id/music"
@@ -59,7 +59,7 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/music"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/musique" />
+            android:src="@drawable/musique" />
 
         <ImageButton
             android:id="@+id/projection"
@@ -71,19 +71,19 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/projection"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/proj" />
+            android:src="@drawable/proj" />
 
         <ImageButton
             android:id="@+id/réveil"
+            style="@android:style/Widget.ImageButton"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_column="1"
             android:layout_margin="10dp"
             android:layout_row="1"
-            android:adjustViewBounds="true"
             android:contentDescription="@string/r_veil"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/reveil" />
+            android:src="@drawable/reveil" />
 
     </GridLayout>
 
